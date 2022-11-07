@@ -1,0 +1,53 @@
+@import url(background.css);
+@import url(Container-Content-Psyco.css);
+@import url(container-info.css);
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+:root {
+    --fontHighlights: 'Caesar Dressing', cursive;
+    font-family: var(--fontHighlights);
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+.modal {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: auto;
+    height: auto;
+    z-index: 99999;
+    border-radius: 4px;
+    box-shadow: 2px 0px 16px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.modal>h2{
+    margin-bottom: 3rem;
+}
+
+.modal>p{
+    margin-bottom: .5rem;
+}
+
+.modal>h2::after{
+    content: "🤘";
+    margin-left: .5rem;
+}
+
+.modal-hide{
+    display: none;
+}

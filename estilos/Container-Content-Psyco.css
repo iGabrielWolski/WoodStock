@@ -1,0 +1,40 @@
+.Container-Content-Psyco {
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 9999;
+    width: 55%;
+    position: absolute;
+    height: 100%;
+}
+
+.Content-Psyco {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: .5rem;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.Content-Psyco>h1 {
+    font-size: 2rem;
+}
+
+.Content-Psyco>h2 {
+    font-size: 1.5em;
+}
+
+@media (max-width: 640px) {
+    .Container-Content-Psyco {
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .Content-Psyco {
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

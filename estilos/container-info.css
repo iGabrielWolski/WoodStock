@@ -1,0 +1,120 @@
+.Container-Content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+
+.Container-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px;
+    background-color: white;
+    height: 100%;
+    width: 45%;
+}
+
+.Container-Form>h2 {
+    margin-top: .5rem;
+    max-width: 300px;
+    font-size: 2rem;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    border-radius: 4px;
+    height: 36px;
+    margin: .8rem;
+    width: 95%;
+    padding-left: .5rem;
+}
+
+button {
+    display: block;
+    padding: 1rem;
+    font-family: 'Caesar Dressing', cursive;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    margin: .8rem;
+    width: 50%;
+    font-size: 1.2rem;
+    transition: transform .1s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .1s;
+}
+
+input:focus {
+    outline: 2px solid #B2478F;
+    border: none;
+}
+
+.container-check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-check>span {
+    color: rgba(0, 0, 0, .5);
+    font-size: .8rem;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    width: 25px;
+    border: none;
+    outline: none;
+}
+
+
+@media (max-width: 640px) {
+
+    .Container-Content {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        bottom: 0%;
+    }
+
+    .Container-Form {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-height: 299px) {
+    input {
+        height: 28px;
+    }
+
+    .Container-Form>h2 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    input[type="checkbox"] {
+        width: 18px;
+    }
+
+    button{
+        margin: 0rem .8rem;
+        margin-bottom: 2rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+}
